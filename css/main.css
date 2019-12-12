@@ -15,21 +15,63 @@ body {
 
 .banner {
   background-color: #2b3851;
+  position: relative;
+  height: 240px;
 }
 
 .robot {
   width: 320px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .robot-body {
   width: 320px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .robot-brain {
   width: 46px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .robot-head-right,
 .robot-head-left {
   width: 125px;
+}
+
+.robot-head-right {
+  position: absolute;
+  top: 7%;
+  left: 50%;
+}
+
+.robot-head-left {
+  position: absolute;
+  top: 7%;
+  left: 11%;
+}
+
+.robot:hover .robot-head-left {
+  top: 5%;
+  left: 6%;
+}
+
+.robot:hover .robot-head-right {
+  top: 5%;
+  left: 55%;
+}
+
+.robot:hover .robot-brain {
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
